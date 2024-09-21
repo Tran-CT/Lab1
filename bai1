@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Môn học</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quản lý môn học</h1>
+        <input type="text" id="search" placeholder="Tìm kiếm môn học..." oninput="searchSubject()">
+        <table id="subjectTable">
+            <thead>
+                <tr>
+                    <th>Tên môn học</th>
+                    <th>đăng ký</th>
+                </tr>
+            </thead>
+            <tbody id="subjectList"></tbody>
+        </table>
+        <input type="text" id="subjectInput" placeholder="Nhập tên môn học...">
+        <button onclick="addSubject()">Thêm Môn học</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
